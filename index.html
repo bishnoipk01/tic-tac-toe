@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <main>
+      <div class="game">
+        <h1 class="game-title">Tic-tac-Toe</h1>
+
+        <table id="board" cellspacing="10px" cellpadding="10px" width="700">
+          <tr>
+            <td class="entry" data-position="1"></td>
+            <td class="entry" data-position="2""></td>
+            <td class="entry" data-position="3"></td>
+          </tr> 
+          <tr>
+            <td class="entry" data-position="4"></td>
+            <td class="entry" data-position="5"></td>
+            <td class="entry" data-position="6"></td>
+          </tr>
+          <tr>
+            <td class="entry" data-position="7"></td>
+            <td class="entry" data-position="8"></td>
+            <td class="entry" data-position="9"></td>
+          </tr>
+        </table>
+          <h2 class=" label player--label">
+            Player <span class="player--active">X</span>'s turn
+          </h2>
+          <h2 class="label player--win hidden">
+            Player <span class="player--active">X</span> Won!!
+          </h2>
+        <button class="reset">Reset🔁</button> 
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

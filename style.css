@@ -1,0 +1,113 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top left, #e15378, #9916d6a4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  width: 80rem;
+  height: 60rem;
+  background-color: rgba(0, 0, 0, 0.575);
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3px);
+  filter: blur();
+}
+.game-title {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  color: #ddd;
+}
+
+.label {
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  color: #ccc;
+}
+
+.player--active {
+  font-family: cursive;
+  color: #ff1233;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
+
+.reset {
+  position: absolute;
+  top: 87%;
+  left: 80%;
+  border: none;
+  padding: 0.8rem 1.1rem;
+  background-color: rgba(255, 255, 255, 0.575);
+  border-radius: 20px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  transition: all 0.3s;
+}
+.reset:active {
+  transform: translateY(3px);
+  outline: none;
+}
+
+#board {
+  width: 33rem;
+  height: 33rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  /* border: 1px solid #fff; */
+  transform: translate(-50%, -50%);
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: cursive;
+  font-weight: 700;
+  color: #eee;
+}
+
+#board tr:not(:last-child) {
+  border-bottom: 2px solid #fff;
+}
+#board td:not(:last-child) {
+  border-right: 2px solid #fff;
+}
+
+#board td {
+  width: 11rem;
+  height: 11rem;
+}
